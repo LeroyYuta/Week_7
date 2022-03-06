@@ -1,0 +1,70 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'RF Dewi';
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.header {
+    background: #86b6e9;
+    grid-area: header;
+}
+
+.main {
+    background: #BBE986;
+    grid-area: main;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20% 1fr 20%;
+    height: 100vh;
+    grid-template-areas:
+        "header header header header"
+        "main main main sidebar"
+        "footer footer footer footer";
+}
+
+.container_main {
+    display: flex;
+}
+
+.title {
+    margin: 5%;
+    height: 10vh;
+}
+
+.up_box1,
+.up_box2,
+.box3 {
+    padding: 2%;
+    margin: 2%;
+    background: rgba(255, 255, 255, 0.734);
+}
+
+.up_box1,
+.up_box2 {
+    flex-grow: 1;
+}
+
+.sidebar {
+    background: #DDE986;
+    grid-area: sidebar;
+    padding: 5%;
+}
+
+.footer {
+    background: #E9c886;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+
+    padding: 1%;
+    background: rgba(255, 255, 255, 0.734);
+}
